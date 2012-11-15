@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A5680481655144C0096DB72"
-               BuildableName = "PIngTest.app"
+               BuildableName = "PingTest.temp_caseinsensitive_rename.app"
                BlueprintName = "PingTest.temp_caseinsensitive_rename"
                ReferencedContainer = "container:PingTest.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A5680481655144C0096DB72"
-            BuildableName = "PIngTest.app"
+            BuildableName = "PingTest.temp_caseinsensitive_rename.app"
             BlueprintName = "PingTest.temp_caseinsensitive_rename"
             ReferencedContainer = "container:PingTest.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A5680481655144C0096DB72"
-            BuildableName = "PIngTest.app"
+            BuildableName = "PingTest.temp_caseinsensitive_rename.app"
             BlueprintName = "PingTest.temp_caseinsensitive_rename"
             ReferencedContainer = "container:PingTest.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A5680481655144C0096DB72"
-            BuildableName = "PIngTest.app"
+            BuildableName = "PingTest.temp_caseinsensitive_rename.app"
             BlueprintName = "PingTest.temp_caseinsensitive_rename"
             ReferencedContainer = "container:PingTest.xcodeproj">
          </BuildableReference>

@@ -48,7 +48,7 @@
 }
 
 -(void)ping:(GBPing *)pinger didReceiveReplyWithSummary:(GBPingSummary *)summary {
-    l(@"%@ %f", summary.host, summary.rtt*1000.0);
+//    l(@"%@ %f", summary.host, summary.rtt*1000.0);
 //    l(@"REPLY>  %@", summary);
 }
 //
