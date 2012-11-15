@@ -19,7 +19,7 @@
     self.ping = [[GBPing alloc] init];
     self.ping.host = @"192.168.0.116";
     self.ping.delegate = self;
-    self.ping.timeout = 0.1;
+    self.ping.timeout = 1;
     
     [self.ping setupWithBlock:^(BOOL success, NSError *error) {
         if (success) {
@@ -56,7 +56,7 @@
 }
 
 -(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
-//    l(@"SENT>   %@", summary);
+    l(@"SENT>   %@", summary);
 }
 
 -(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
