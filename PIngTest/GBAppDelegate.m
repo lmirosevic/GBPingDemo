@@ -17,9 +17,9 @@
     [NSThread currentThread].name = @"Main Thread";
     
     self.ping = [[GBPing alloc] init];
-    self.ping.host = @"192.168.0.255";
+    self.ping.host = @"192.168.0.116";
     self.ping.delegate = self;
-    self.ping.timeout = 1;
+    self.ping.timeout = 0.1;
     
     [self.ping setupWithBlock:^(BOOL success, NSError *error) {
         if (success) {
@@ -48,30 +48,28 @@
 }
 
 -(void)ping:(GBPing *)pinger didReceiveReplyWithSummary:(GBPingSummary *)summary {
-//    l(@"%@ %f", summary.host, summary.rtt*1000.0);
-//    l(@"REPLY>  %@", summary);
+    l(@"REPLY>  %@", summary);
 }
-//
-//-(void)ping:(GBPing *)pinger didReceiveUnexpectedReplyWithSummary:(GBPingSummary *)summary {
-//    l(@"BREPLY> %@", summary);
-//}
-//
-//-(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
-//    l(@"\n\n");
-////    l(@"SENT>   %@", summary);
-//}
-//
-//-(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
-//    l(@"TIMOUT> %@", summary);
-//}
-//
-//-(void)ping:(GBPing *)pinger didFailWithError:(NSError *)error {
-//    l(@"FAIL>   %@", error);
-//}
-//
-//-(void)ping:(GBPing *)pinger didFailToSendPingWithSummary:(GBPingSummary *)summary error:(NSError *)error {
-//    l(@"FSENT>  %@, %@", summary, error);
-//}
+
+-(void)ping:(GBPing *)pinger didReceiveUnexpectedReplyWithSummary:(GBPingSummary *)summary {
+    l(@"BREPLY> %@", summary);
+}
+
+-(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
+//    l(@"SENT>   %@", summary);
+}
+
+-(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
+    l(@"TIMOUT> %@", summary);
+}
+
+-(void)ping:(GBPing *)pinger didFailWithError:(NSError *)error {
+    l(@"FAIL>   %@", error);
+}
+
+-(void)ping:(GBPing *)pinger didFailToSendPingWithSummary:(GBPingSummary *)summary error:(NSError *)error {
+    l(@"FSENT>  %@, %@", summary, error);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
