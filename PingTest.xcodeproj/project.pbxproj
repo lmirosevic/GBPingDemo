@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2A570716551F8500AD51AF /* libGBPing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2A570416551F6D00AD51AF /* libGBPing.a */; };
 		8A56804E1655144C0096DB72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56804D1655144C0096DB72 /* UIKit.framework */; };
 		8A5680501655144C0096DB72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56804F1655144C0096DB72 /* Foundation.framework */; };
 		8A5680521655144C0096DB72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5680511655144C0096DB72 /* CoreGraphics.framework */; };
@@ -16,22 +17,58 @@
 		8A5680601655144C0096DB72 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A56805F1655144C0096DB72 /* Default.png */; };
 		8A5680621655144C0096DB72 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5680611655144C0096DB72 /* Default@2x.png */; };
 		8A5680641655144C0096DB72 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5680631655144C0096DB72 /* Default-568h@2x.png */; };
+		8A5680851655170E0096DB72 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5680841655170E0096DB72 /* CFNetwork.framework */; };
+		8A56810716551B430096DB72 /* libGBToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56810416551B380096DB72 /* libGBToolbox.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A2A570316551F6D00AD51AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8ADF26B81647CC1F000240C2;
+			remoteInfo = GBPing;
+		};
+		8A2A570516551F8100AD51AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ADF26B71647CC1F000240C2;
+			remoteInfo = GBPing;
+		};
+		8A56810316551B380096DB72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8AD911B1162D9E2200C9D287;
+			remoteInfo = GBToolbox;
+		};
+		8A56810516551B400096DB72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD911B0162D9E2200C9D287;
+			remoteInfo = GBToolbox;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		8A5680491655144C0096DB72 /* PIngTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIngTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBPing.xcodeproj; path = ../../GBPing/GBPing.xcodeproj; sourceTree = "<group>"; };
+		8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingTest.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A56804D1655144C0096DB72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A56804F1655144C0096DB72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A5680511655144C0096DB72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8A5680551655144C0096DB72 /* PIngTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PIngTest-Info.plist"; sourceTree = "<group>"; };
+		8A5680551655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PingTest.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		8A5680571655144C0096DB72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A5680591655144C0096DB72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A56805B1655144C0096DB72 /* PIngTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PIngTest-Prefix.pch"; sourceTree = "<group>"; };
+		8A56805B1655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingTest.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		8A56805C1655144C0096DB72 /* GBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBAppDelegate.h; sourceTree = "<group>"; };
 		8A56805D1655144C0096DB72 /* GBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBAppDelegate.m; sourceTree = "<group>"; };
 		8A56805F1655144C0096DB72 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8A5680611655144C0096DB72 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8A5680631655144C0096DB72 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8A5680841655170E0096DB72 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBToolbox.xcodeproj; path = ../../GBToolbox/GBToolbox.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A56810716551B430096DB72 /* libGBToolbox.a in Frameworks */,
+				8A2A570716551F8500AD51AF /* libGBPing.a in Frameworks */,
+				8A5680851655170E0096DB72 /* CFNetwork.framework in Frameworks */,
 				8A56804E1655144C0096DB72 /* UIKit.framework in Frameworks */,
 				8A5680501655144C0096DB72 /* Foundation.framework in Frameworks */,
 				8A5680521655144C0096DB72 /* CoreGraphics.framework in Frameworks */,
@@ -48,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A2A56FC16551F6D00AD51AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A570416551F6D00AD51AF /* libGBPing.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8A56803E1655144C0096DB72 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +108,7 @@
 		8A56804A1655144C0096DB72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A5680491655144C0096DB72 /* PIngTest.app */,
+				8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +116,7 @@
 		8A56804C1655144C0096DB72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A5680841655170E0096DB72 /* CFNetwork.framework */,
 				8A56804D1655144C0096DB72 /* UIKit.framework */,
 				8A56804F1655144C0096DB72 /* Foundation.framework */,
 				8A5680511655144C0096DB72 /* CoreGraphics.framework */,
@@ -78,6 +127,8 @@
 		8A5680531655144C0096DB72 /* PIngTest */ = {
 			isa = PBXGroup;
 			children = (
+				8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */,
+				8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */,
 				8A56805C1655144C0096DB72 /* GBAppDelegate.h */,
 				8A56805D1655144C0096DB72 /* GBAppDelegate.m */,
 				8A5680541655144C0096DB72 /* Supporting Files */,
@@ -88,10 +139,10 @@
 		8A5680541655144C0096DB72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A5680551655144C0096DB72 /* PIngTest-Info.plist */,
+				8A5680551655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Info.plist */,
 				8A5680561655144C0096DB72 /* InfoPlist.strings */,
 				8A5680591655144C0096DB72 /* main.m */,
-				8A56805B1655144C0096DB72 /* PIngTest-Prefix.pch */,
+				8A56805B1655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Prefix.pch */,
 				8A56805F1655144C0096DB72 /* Default.png */,
 				8A5680611655144C0096DB72 /* Default@2x.png */,
 				8A5680631655144C0096DB72 /* Default-568h@2x.png */,
@@ -99,12 +150,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8A5680FD16551B380096DB72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A56810416551B380096DB72 /* libGBToolbox.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A5680481655144C0096DB72 /* PIngTest */ = {
+		8A5680481655144C0096DB72 /* PingTest.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PIngTest" */;
+			buildConfigurationList = 8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingTest.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				8A5680451655144C0096DB72 /* Sources */,
 				8A5680461655144C0096DB72 /* Frameworks */,
@@ -113,10 +172,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				8A56810616551B400096DB72 /* PBXTargetDependency */,
+				8A2A570616551F8100AD51AF /* PBXTargetDependency */,
 			);
-			name = PIngTest;
+			name = PingTest.temp_caseinsensitive_rename;
 			productName = PIngTest;
-			productReference = 8A5680491655144C0096DB72 /* PIngTest.app */;
+			productReference = 8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +190,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Goonbee;
 			};
-			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PIngTest" */;
+			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -139,12 +200,39 @@
 			mainGroup = 8A56803E1655144C0096DB72;
 			productRefGroup = 8A56804A1655144C0096DB72 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A2A56FC16551F6D00AD51AF /* Products */;
+					ProjectRef = 8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */;
+				},
+				{
+					ProductGroup = 8A5680FD16551B380096DB72 /* Products */;
+					ProjectRef = 8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				8A5680481655144C0096DB72 /* PIngTest */,
+				8A5680481655144C0096DB72 /* PingTest.temp_caseinsensitive_rename */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8A2A570416551F6D00AD51AF /* libGBPing.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGBPing.a;
+			remoteRef = 8A2A570316551F6D00AD51AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A56810416551B380096DB72 /* libGBToolbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGBToolbox.a;
+			remoteRef = 8A56810316551B380096DB72 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8A5680471655144C0096DB72 /* Resources */ = {
@@ -171,6 +259,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A2A570616551F8100AD51AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GBPing;
+			targetProxy = 8A2A570516551F8100AD51AF /* PBXContainerItemProxy */;
+		};
+		8A56810616551B400096DB72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GBToolbox;
+			targetProxy = 8A56810516551B400096DB72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A5680561655144C0096DB72 /* InfoPlist.strings */ = {
@@ -206,8 +307,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				HEADER_SEARCH_PATHS = "../**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -228,8 +331,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				HEADER_SEARCH_PATHS = "../**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -240,9 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PIngTest/PIngTest-Prefix.pch";
-				INFOPLIST_FILE = "PIngTest/PIngTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PIngTest/PingTest.temp_caseinsensitive_rename-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../**";
+				INFOPLIST_FILE = "PIngTest/PingTest.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = PingTest.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -251,9 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PIngTest/PIngTest-Prefix.pch";
-				INFOPLIST_FILE = "PIngTest/PIngTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PIngTest/PingTest.temp_caseinsensitive_rename-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../**";
+				INFOPLIST_FILE = "PIngTest/PingTest.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = PingTest.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -261,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PIngTest" */ = {
+		8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A5680651655144C0096DB72 /* Debug */,
@@ -270,13 +377,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PIngTest" */ = {
+		8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingTest.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A5680681655144C0096DB72 /* Debug */,
 				8A5680691655144C0096DB72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

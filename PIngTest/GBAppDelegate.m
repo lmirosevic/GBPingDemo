@@ -8,16 +8,70 @@
 
 #import "GBAppDelegate.h"
 
+#import "GBPingSummary.h"
+
 @implementation GBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NSThread currentThread].name = @"Main Thread";
+    
+    self.ping = [[GBPing alloc] init];
+    self.ping.host = @"192.168.0.255";
+    self.ping.delegate = self;
+    self.ping.timeout = 1;
+    
+    [self.ping setupWithBlock:^(BOOL success, NSError *error) {
+        if (success) {
+            //start pinging
+            [self.ping startPinging];
+            
+//            //stop it after 5 seconds
+//            [NSTimer scheduledTimerWithTimeInterval:5 repeats:NO withBlock:^{
+//                l(@"stop it");
+//                [_ping stop];
+//                _ping = nil;
+//            }];
+        }
+        else {
+            l(@"failed to start");
+        }
+    }];
+
+    
+    //iOS boilerplate
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.window.rootViewController = [UINavigationController new];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+-(void)ping:(GBPing *)pinger didReceiveReplyWithSummary:(GBPingSummary *)summary {
+    l(@"%@ %f", summary.host, summary.rtt*1000.0);
+//    l(@"REPLY>  %@", summary);
+}
+//
+//-(void)ping:(GBPing *)pinger didReceiveUnexpectedReplyWithSummary:(GBPingSummary *)summary {
+//    l(@"BREPLY> %@", summary);
+//}
+//
+//-(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
+//    l(@"\n\n");
+////    l(@"SENT>   %@", summary);
+//}
+//
+//-(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
+//    l(@"TIMOUT> %@", summary);
+//}
+//
+//-(void)ping:(GBPing *)pinger didFailWithError:(NSError *)error {
+//    l(@"FAIL>   %@", error);
+//}
+//
+//-(void)ping:(GBPing *)pinger didFailToSendPingWithSummary:(GBPingSummary *)summary error:(NSError *)error {
+//    l(@"FSENT>  %@, %@", summary, error);
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GBAppDelegate : UIResponder <UIApplicationDelegate>
+#import "GBPing.h"
+
+@interface GBAppDelegate : UIResponder <UIApplicationDelegate, GBPingDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) GBPing *ping;
 
 @end
