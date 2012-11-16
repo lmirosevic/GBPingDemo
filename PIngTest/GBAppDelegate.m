@@ -20,6 +20,7 @@
     self.ping.host = @"192.168.0.116";
     self.ping.delegate = self;
     self.ping.timeout = 1;
+    self.ping.pingPeriod = 0.9;
     
     [self.ping setupWithBlock:^(BOOL success, NSError *error) {
         if (success) {
