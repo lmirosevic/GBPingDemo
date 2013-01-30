@@ -1,14 +1,12 @@
 //
 //  GBAppDelegate.m
-//  PIngTest
+//  PingDemo
 //
 //  Created by Luka Mirosevic on 15/11/2012.
 //  Copyright (c) 2012 Goonbee. All rights reserved.
 //
 
 #import "GBAppDelegate.h"
-
-#import "GBPingSummary.h"
 
 @implementation GBAppDelegate
 

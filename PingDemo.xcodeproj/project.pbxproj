@@ -61,14 +61,14 @@
 
 /* Begin PBXFileReference section */
 		8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBPing.xcodeproj; path = ../../GBPing/GBPing.xcodeproj; sourceTree = "<group>"; };
-		8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingTest.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5680491655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingDemo.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A56804D1655144C0096DB72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A56804F1655144C0096DB72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A5680511655144C0096DB72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8A5680551655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PingTest.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		8A5680551655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PingDemo.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		8A5680571655144C0096DB72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A5680591655144C0096DB72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A56805B1655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingTest.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		8A56805B1655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingDemo.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		8A56805C1655144C0096DB72 /* GBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBAppDelegate.h; sourceTree = "<group>"; };
 		8A56805D1655144C0096DB72 /* GBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBAppDelegate.m; sourceTree = "<group>"; };
 		8A56805F1655144C0096DB72 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -106,7 +106,8 @@
 		8A56803E1655144C0096DB72 = {
 			isa = PBXGroup;
 			children = (
-				8A5680531655144C0096DB72 /* PIngTest */,
+				8A7D636616B945C600D6C676 /* Libraries */,
+				8A5680531655144C0096DB72 /* Ping Demo */,
 				8A56804C1655144C0096DB72 /* Frameworks */,
 				8A56804A1655144C0096DB72 /* Products */,
 			);
@@ -115,7 +116,7 @@
 		8A56804A1655144C0096DB72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */,
+				8A5680491655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,25 +132,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A5680531655144C0096DB72 /* PIngTest */ = {
+		8A5680531655144C0096DB72 /* Ping Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */,
-				8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */,
 				8A56805C1655144C0096DB72 /* GBAppDelegate.h */,
 				8A56805D1655144C0096DB72 /* GBAppDelegate.m */,
 				8A5680541655144C0096DB72 /* Supporting Files */,
 			);
+			name = "Ping Demo";
 			path = PIngTest;
 			sourceTree = "<group>";
 		};
 		8A5680541655144C0096DB72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A5680551655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Info.plist */,
+				8A5680551655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename-Info.plist */,
 				8A5680561655144C0096DB72 /* InfoPlist.strings */,
 				8A5680591655144C0096DB72 /* main.m */,
-				8A56805B1655144C0096DB72 /* PingTest.temp_caseinsensitive_rename-Prefix.pch */,
+				8A56805B1655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename-Prefix.pch */,
 				8A56805F1655144C0096DB72 /* Default.png */,
 				8A5680611655144C0096DB72 /* Default@2x.png */,
 				8A5680631655144C0096DB72 /* Default-568h@2x.png */,
@@ -166,12 +166,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8A7D636616B945C600D6C676 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A56FB16551F6D00AD51AF /* GBPing.xcodeproj */,
+				8A5680FC16551B380096DB72 /* GBToolbox.xcodeproj */,
+			);
+			name = Libraries;
+			path = PIngTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A5680481655144C0096DB72 /* PingTest.temp_caseinsensitive_rename */ = {
+		8A5680481655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingTest.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingDemo.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				8A5680451655144C0096DB72 /* Sources */,
 				8A5680461655144C0096DB72 /* Frameworks */,
@@ -183,9 +193,9 @@
 				8A56810616551B400096DB72 /* PBXTargetDependency */,
 				8A2A570616551F8100AD51AF /* PBXTargetDependency */,
 			);
-			name = PingTest.temp_caseinsensitive_rename;
+			name = PingDemo.temp_caseinsensitive_rename;
 			productName = PIngTest;
-			productReference = 8A5680491655144C0096DB72 /* PingTest.temp_caseinsensitive_rename.app */;
+			productReference = 8A5680491655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +208,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Goonbee;
 			};
-			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingTest" */;
+			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,7 +230,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				8A5680481655144C0096DB72 /* PingTest.temp_caseinsensitive_rename */,
+				8A5680481655144C0096DB72 /* PingDemo.temp_caseinsensitive_rename */,
 			);
 		};
 /* End PBXProject section */
@@ -360,10 +370,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PIngTest/PingTest.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_PREFIX_HEADER = "PIngTest/PingDemo.temp_caseinsensitive_rename-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../**";
-				INFOPLIST_FILE = "PIngTest/PingTest.temp_caseinsensitive_rename-Info.plist";
-				PRODUCT_NAME = PingTest.temp_caseinsensitive_rename;
+				INFOPLIST_FILE = "PIngTest/PingDemo.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = PingDemo.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,10 +382,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PIngTest/PingTest.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_PREFIX_HEADER = "PIngTest/PingDemo.temp_caseinsensitive_rename-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../**";
-				INFOPLIST_FILE = "PIngTest/PingTest.temp_caseinsensitive_rename-Info.plist";
-				PRODUCT_NAME = PingTest.temp_caseinsensitive_rename;
+				INFOPLIST_FILE = "PIngTest/PingDemo.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = PingDemo.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -383,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingTest" */ = {
+		8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A5680651655144C0096DB72 /* Debug */,
@@ -392,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingTest.temp_caseinsensitive_rename" */ = {
+		8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingDemo.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A5680681655144C0096DB72 /* Debug */,
