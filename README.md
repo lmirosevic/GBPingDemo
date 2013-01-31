@@ -6,7 +6,7 @@ Demo project for GBPing
 Library
 ------------
 
-See: www.github.com/lmirosevic/GBPing
+See: [github.com/lmirosevic/GBPing](https://github.com/lmirosevic/GBPing)
 
 Copyright & License
 ------------
