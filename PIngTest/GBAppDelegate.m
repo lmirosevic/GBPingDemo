@@ -10,64 +10,66 @@
 
 @implementation GBAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [NSThread currentThread].name = @"Main Thread";
-    
-    self.ping = [[GBPing alloc] init];
-    self.ping.host = @"192.168.0.116";
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // create and configure a new ping object
+    self.ping = [GBPing new];
+    self.ping.host = @"google.com";
+//    self.ping.host = @"192.168.0.140";
+//    self.ping.host = @"192.168.0.255";
     self.ping.delegate = self;
     self.ping.timeout = 1;
     self.ping.pingPeriod = 0.9;
     
+    // setup the ping object (this resolves addresses etc)
     [self.ping setupWithBlock:^(BOOL success, NSError *error) {
         if (success) {
-            //start pinging
+            // start pinging
             [self.ping startPinging];
             
-//            //stop it after 5 seconds
-//            [NSTimer scheduledTimerWithTimeInterval:5 repeats:NO withBlock:^{
-//                l(@"stop it");
-//                [_ping stop];
-//                _ping = nil;
-//            }];
+            // stop it after 5 seconds
+            [NSTimer scheduledTimerWithTimeInterval:5 repeats:NO withBlock:^{
+                NSLog(@"stop it");
+                [self.ping stop];
+                self.ping = nil;
+            }];
         }
         else {
-            l(@"failed to start");
+            NSLog(@"failed to start");
         }
     }];
 
     
-    //iOS boilerplate
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [UINavigationController new];
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    //iOS boilerplate, we don't need any UI so we just show an empty UIViewController
+    self.window = [UIWindow new];
+    self.window.rootViewController = [UIViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
 -(void)ping:(GBPing *)pinger didReceiveReplyWithSummary:(GBPingSummary *)summary {
-    l(@"REPLY>  %@", summary);
+    NSLog(@"REPLY>  %@", summary);
 }
 
 -(void)ping:(GBPing *)pinger didReceiveUnexpectedReplyWithSummary:(GBPingSummary *)summary {
-    l(@"BREPLY> %@", summary);
+    NSLog(@"BREPLY> %@", summary);
 }
 
 -(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
-    l(@"SENT>   %@", summary);
+    NSLog(@"SENT>   %@", summary);
 }
 
 -(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
-    l(@"TIMOUT> %@", summary);
+    NSLog(@"TIMOUT> %@", summary);
 }
 
 -(void)ping:(GBPing *)pinger didFailWithError:(NSError *)error {
-    l(@"FAIL>   %@", error);
+    NSLog(@"FAIL>   %@", error);
 }
 
 -(void)ping:(GBPing *)pinger didFailToSendPingWithSummary:(GBPingSummary *)summary error:(NSError *)error {
-    l(@"FSENT>  %@, %@", summary, error);
+    NSLog(@"FSENT>  %@, %@", summary, error);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
