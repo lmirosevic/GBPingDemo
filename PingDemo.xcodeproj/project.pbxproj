@@ -132,6 +132,7 @@
 				8A5680461655144C0096DB72 /* Frameworks */,
 				8A5680471655144C0096DB72 /* Resources */,
 				B3448E148DBB62B7C5541523 /* Copy Pods Resources */,
+				86DB391498A81496BA0FF40A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,7 +150,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GB;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Goonbee;
 			};
 			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingDemo" */;
@@ -184,6 +185,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		86DB391498A81496BA0FF40A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0C792FE3000BA9C2DC83245 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +266,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -261,7 +278,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -283,7 +300,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -299,6 +316,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIngTest/PingDemo-Prefix.pch";
 				INFOPLIST_FILE = "PIngTest/PingDemo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonbee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PingDemo;
 				WRAPPER_EXTENSION = app;
 			};
@@ -311,6 +329,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIngTest/PingDemo-Prefix.pch";
 				INFOPLIST_FILE = "PIngTest/PingDemo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonbee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PingDemo;
 				WRAPPER_EXTENSION = app;
 			};

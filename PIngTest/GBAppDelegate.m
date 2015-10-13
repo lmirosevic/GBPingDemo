@@ -27,13 +27,12 @@
             [self.ping startPinging];
             
             // stop it after 5 seconds
-            [NSTimer scheduledTimerWithTimeInterval:5 repeats:NO withBlock:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 NSLog(@"stop it");
                 [self.ping stop];
                 self.ping = nil;
-            }];
-        }
-        else {
+            });
+        } else {
             NSLog(@"failed to start");
         }
     }];
