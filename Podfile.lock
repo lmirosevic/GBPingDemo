@@ -1,0 +1,14 @@
+PODS:
+  - GBPing (1.3.0)
+
+DEPENDENCIES:
+  - GBPing (from `~/Projects/Goonbee Modules/GBPing`)
+
+EXTERNAL SOURCES:
+  GBPing:
+    :path: "~/Projects/Goonbee Modules/GBPing"
+
+SPEC CHECKSUMS:
+  GBPing: c4874e43905fea8e5144891c607264833734a7bd
+
+COCOAPODS: 0.39.0
